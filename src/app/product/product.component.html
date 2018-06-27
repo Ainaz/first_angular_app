@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="row">
+    <div class="search_form">
+      <label for="product_search">Поиск по названию</label>
+      <input id="product_search" [(ngModel)]="searchStr">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="products">
+    <div *ngFor="let product of products | search: searchStr" class="col-md-4 product" routerLink="/product/{{product.id}}">
+      <div class="product_content" appHover>
+        <div class="product_name">{{product.name}}</div>
+        <div class="product_desc">{{product.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-product-detail [product]="selectedProduct"></app-product-detail>

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="product">
+        <h2>{{ product.name }}</h2>
+        <div><span>id: </span>{{product.id}}</div>
+        <div><span>category_id: </span>{{product.category_id}}</div>
+        <div><span>description: </span>{{product.description}}</div>
+    </div>
+  </div>
+</div>

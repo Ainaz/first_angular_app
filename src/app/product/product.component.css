@@ -1,0 +1,28 @@
+.product{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.product_content{
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #f7f7f7;
+    padding: 20px;
+    transition: .5s all;
+}
+.hovered{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    background: #acacac;
+    transition: .5s all;
+    z-index: 10;
+    cursor: pointer;
+}
+.search_form{
+    margin: 20px auto;
+}
+.search_form label{
+    margin-right: 10px;
+}
+.search_form input{
+    padding-left: 10px;
+}

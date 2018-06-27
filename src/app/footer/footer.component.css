@@ -1,0 +1,44 @@
+footer{
+    background: linear-gradient(to right, #fff 50%, #9c9c9c 50%);
+    margin-top: 20px;
+}
+.footer_content{
+    min-height: 60px;
+    background: #9c9c9c;
+    text-align: center;
+}
+.logo img{
+    width: 100%;
+}
+.foo_logo_desc{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer_phone a{
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+.footer_email,
+.footer_phone{
+    padding: 0;
+}
+.footer_email a,
+.footer_phone a{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+}
+
+.footer_email a:hover,
+.footer_phone a:hover{
+    background: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    transition: all 1s ease 0s;
+}

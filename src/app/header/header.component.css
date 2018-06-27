@@ -1,0 +1,67 @@
+header{
+    margin-bottom: 20px;
+}
+.top_line{
+    background: #ffffff;
+    text-align: center;
+}
+.logo img{
+    width: 100%;
+    max-width: 100px;
+}
+.header_menu{
+    background: linear-gradient(to right, #9c9c9c 50%, #fff 50%);
+    text-align: center;
+}
+.header_menu_cont{
+    background: #9c9c9c;
+}
+.logo_desc{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.header_contacts{
+    padding: 20px 0;
+}
+.header_email a,
+.header_phone a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #433191;
+    transition: color 1s ease 0s;
+}
+.header_email a:hover,
+.header_phone a:hover{
+    text-decoration: none;
+    color: #c5baf5;
+}
+
+.header_menu ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.header_menu ul li{
+    display: inline-block;
+    border-right: 1px solid #333333;
+}
+.header_menu ul li:last-child{
+    border-right: none;
+}
+.header_menu ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.header_menu ul li a:hover{
+    background: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    transition: all 1s ease 0s;
+}
