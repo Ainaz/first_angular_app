@@ -13,6 +13,7 @@ import { SearchPipe } from './search.pipe';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ProductRoutingModule } from './product-routing/product-routing.module';
 
 const routes = [
   {path: '', component: HomePageComponent},
@@ -37,7 +38,8 @@ const routes = [
     NgbModule.forRoot(),
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ProductRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
