@@ -1,0 +1,11 @@
+<app-search-input (inputValueChange)=categoryNameReturn($event)></app-search-input>
+<div class="container">
+  <div class="categories">
+    <div *ngFor="let category of categories | search: searchStr" class="col-md-4 category">
+      <div class="category_content">
+        <div class="category_id">{{category.id}}</div>
+        <div class="category_name">{{category.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>

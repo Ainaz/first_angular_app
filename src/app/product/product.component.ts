@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
-import { PRODUCTS } from '../mock-products';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -23,5 +22,7 @@ export class ProductComponent implements OnInit {
   getProducts(): void {
     this.productService.getProducts().subscribe(products => this.products = products);
   }
-
+  productNameReturn(str) {
+    this.searchStr = str;
+  }
 }

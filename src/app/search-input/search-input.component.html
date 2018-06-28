@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="search_form">
+      <label for="product_search">Поиск по названию</label>
+      <input [ngModel]="inputValue" (ngModelChange)="onValueChange($event)" />
+      <button (click)=clearInput()>Очистить</button>
+    </div>
+  </div>
+</div>

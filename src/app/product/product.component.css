@@ -17,12 +17,3 @@
     z-index: 10;
     cursor: pointer;
 }
-.search_form{
-    margin: 20px auto;
-}
-.search_form label{
-    margin-right: 10px;
-}
-.search_form input{
-    padding-left: 10px;
-}

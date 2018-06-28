@@ -14,11 +14,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductRoutingModule } from './product-routing/product-routing.module';
+import { SearchInputComponent } from './search-input/search-input.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 const routes = [
   {path: '', component: HomePageComponent},
   {path: 'catalog', component: ProductComponent},
   {path: 'product/:id', loadChildren: './product-routing#ProductRoutingModule'},
+  {path: 'categories', component: CategoriesComponent},
   {path: 'contacts', component: ContactsComponent}
 ];
 
@@ -32,7 +35,9 @@ const routes = [
     HoverDirective,
     SearchPipe,
     HomePageComponent,
-    ContactsComponent
+    ContactsComponent,
+    SearchInputComponent,
+    CategoriesComponent
   ],
   imports: [
     NgbModule.forRoot(),

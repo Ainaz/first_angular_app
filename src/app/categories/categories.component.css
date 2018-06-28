@@ -1,0 +1,11 @@
+.category{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.category_content{
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #f7f7f7;
+    padding: 20px;
+    transition: .5s all;
+}

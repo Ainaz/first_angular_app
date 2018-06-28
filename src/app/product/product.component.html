@@ -1,12 +1,5 @@
-
-<div class="container">
-  <div class="row">
-    <div class="search_form">
-      <label for="product_search">Поиск по названию</label>
-      <input id="product_search" [(ngModel)]="searchStr">
-    </div>
-  </div>
-</div>
+<app-search-input (inputValueChange)=productNameReturn($event) ></app-search-input>
+<a routerLink="/categories">Категории</a>
 <div class="container">
   <div class="products">
     <div *ngFor="let product of products | search: searchStr" class="col-md-4 product" routerLink="/product/{{product.id}}">
@@ -17,4 +10,3 @@
     </div>
   </div>
 </div>
-<app-product-detail [product]="selectedProduct"></app-product-detail>
