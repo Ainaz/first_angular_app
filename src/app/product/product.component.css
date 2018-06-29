@@ -17,3 +17,15 @@
     z-index: 10;
     cursor: pointer;
 }
+
+:host-context(.nightMode) .product_content{
+    border: 1px solid #ffffff;
+    background: #333333;
+}
+:host-context(.nightMode) .product_content div{
+    color: #ffffff;
+}
+:host-context(.nightMode) .hovered{
+    box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+    background: #acacac;
+}

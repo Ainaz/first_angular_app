@@ -20,7 +20,7 @@ import { CategoriesComponent } from './categories/categories.component';
 const routes = [
   {path: '', component: HomePageComponent},
   {path: 'catalog', component: ProductComponent},
-  {path: 'product/:id', loadChildren: './product-routing#ProductRoutingModule'},
+  {path: 'product/:id', loadChildren: 'add/product-routing#ProductRoutingModule'},
   {path: 'categories', component: CategoriesComponent},
   {path: 'contacts', component: ContactsComponent}
 ];

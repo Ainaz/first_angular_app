@@ -42,3 +42,14 @@ footer{
     text-decoration: none;
     transition: all 1s ease 0s;
 }
+
+:host-context(.nightMode) footer{
+    background: linear-gradient(to right, #9c9c9c 50%, #333333 50%);
+}
+:host-context(.nightMode) .footer_content{
+    background: #333333;
+}
+:host-context(.nightMode) .footer_phone a{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}

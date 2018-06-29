@@ -37,7 +37,6 @@ header{
     text-decoration: none;
     color: #c5baf5;
 }
-
 .header_menu ul{
     list-style: none;
     padding: 0;
@@ -64,4 +63,29 @@ header{
     color: #333333;
     text-decoration: none;
     transition: all 1s ease 0s;
+}
+
+:host-context(.nightMode) header{
+    background: #9c9c9c;
+}
+:host-context(.nightMode) .top_line{
+    background: #9c9c9c;
+}
+:host-context(.nightMode) .header_menu{
+    background: linear-gradient(to right, #333333 50%, #9c9c9c 50%);
+}
+
+:host-context(.nightMode) .header_email a,
+:host-context(.nightMode) .header_phone a{
+    color: #c5baf5;
+}
+:host-context(.nightMode) .header_email a:hover,
+:host-context(.nightMode) .header_phone a:hover{
+    color: #433191;
+}
+:host-context(.nightMode) .header_menu_cont{
+    background: #333333;
+}
+:host-context(.nightMode) .header_menu ul li{
+    border-right: 1px solid #fff;
 }
